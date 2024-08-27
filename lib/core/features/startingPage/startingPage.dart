@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/icons.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/startButton.dart';
 
@@ -36,7 +35,7 @@ class _startingPageState extends State<startingPage> with SingleTickerProviderSt
       backgroundColor: Colors.red[400],
       body:  FadeTransition(
         opacity: animation,
-        child: SingleChildScrollView(
+        child: const SingleChildScrollView(
           child: Column(
             children: [
               Padding(
