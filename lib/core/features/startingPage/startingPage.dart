@@ -16,7 +16,7 @@ class _startingPageState extends State<startingPage> with SingleTickerProviderSt
   void initState() {
     super.initState();
     controller = AnimationController(
-      duration: const Duration(milliseconds: 200),
+      duration: const Duration(milliseconds: 500),
       vsync: this,
     );
     animation = Tween<double>(begin: 0.0, end: 1.0).animate(controller);
