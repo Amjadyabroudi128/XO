@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tic_tac_toe/constants/constants.dart';
 
 class startButton extends StatefulWidget {
   const startButton({
@@ -16,7 +17,7 @@ class _startButtonState extends State<startButton> {
       style: ElevatedButton.styleFrom(
         minimumSize: Size(240, 68),
         elevation: 8,
-        backgroundColor: Colors.yellow,
+        backgroundColor: backGround,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15) // Make the corners square
         ),
