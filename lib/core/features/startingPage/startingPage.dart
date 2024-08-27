@@ -1,7 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/icons.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/startButton.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 class startingPage extends StatefulWidget {
   const startingPage({super.key});
 
@@ -35,14 +36,21 @@ class _startingPageState extends State<startingPage> with SingleTickerProviderSt
       backgroundColor: Colors.red[400],
       body:  FadeTransition(
         opacity: animation,
-        child: const SingleChildScrollView(
+        child:  SingleChildScrollView(
           child: Column(
             children: [
               Padding(
                 padding: EdgeInsets.only(top: 120, left: 70),
                 child: myIcons(),
               ),
-              SizedBox(height: 460,),
+              Padding(
+                padding: EdgeInsets.only(top: 30),
+                child: Text("TIC-TAC-TOE", style: GoogleFonts.rubikMonoOne(
+                  color: Colors.white,
+                  fontSize: 32
+                )),
+              ),
+              SizedBox(height: 350,),
               startButton()
             ],
           ),
