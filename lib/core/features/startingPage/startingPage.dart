@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/icons.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/startButton.dart';
 
@@ -43,7 +43,12 @@ class _startingPageState extends State<startingPage> with SingleTickerProviderSt
                 padding: EdgeInsets.only(top: 120, left: 70),
                 child: myIcons(),
               ),
-              SizedBox(height: 460,),
+              Text("TIC-TAC-TOE", style: GoogleFonts.archivoBlack(
+                fontSize: 35,
+                color: Colors.white,
+                letterSpacing: 3
+              ),),
+              SizedBox(height: 380,),
               startButton()
             ],
           ),
