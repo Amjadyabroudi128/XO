@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class startButton extends StatefulWidget {
   const startButton({
@@ -25,7 +26,12 @@ class _startButtonState extends State<startButton> {
       onPressed: (){
 
       },
-      child: Text("START", style: TextStyle(color: Colors.red[400], fontSize: 33, letterSpacing: 2.0),),
+      child: Text("START", style: GoogleFonts.aBeeZee(
+        fontSize: 33,
+        letterSpacing: 4,
+        fontWeight: FontWeight.bold,
+        color: Colors.red[400],
+      ),),
     );
   }
 }
