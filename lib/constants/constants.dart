@@ -11,9 +11,11 @@ Color redShade = Colors.red.shade400;
 // fontWeight
 FontWeight boldie = FontWeight.bold;
 
+ // fontSize
+ const double size33 = 33;
 // styles
 TextStyle googleStyle = GoogleFonts.aBeeZee(
-  fontSize: 33,
+  fontSize: size33,
   letterSpacing: 4,
   fontWeight: boldie,
   color: redShade,
