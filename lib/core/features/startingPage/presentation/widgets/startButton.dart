@@ -27,12 +27,8 @@ class _startButtonState extends State<startButton> {
       onPressed: (){
 
       },
-      child: Text("START", style: GoogleFonts.aBeeZee(
-        fontSize: 33,
-        letterSpacing: 4,
-        fontWeight: boldie,
-        color: redShade,
-      ),),
+      child: Text("START", style: googleStyle
+      ),
     );
   }
 }
