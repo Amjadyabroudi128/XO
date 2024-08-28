@@ -7,3 +7,6 @@ const FaIcon circle = FaIcon(FontAwesomeIcons.o, color: Colors.yellow,size: 150,
 
  // colors
 Color redShade = Colors.red.shade400;
+
+// fontWeight
+FontWeight boldie = FontWeight.bold;

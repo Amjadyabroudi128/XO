@@ -30,7 +30,7 @@ class _startButtonState extends State<startButton> {
       child: Text("START", style: GoogleFonts.aBeeZee(
         fontSize: 33,
         letterSpacing: 4,
-        fontWeight: FontWeight.bold,
+        fontWeight: boldie,
         color: redShade,
       ),),
     );
