@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tic_tac_toe/constants/constants.dart';
 
 class startButton extends StatefulWidget {
   const startButton({
@@ -30,7 +31,7 @@ class _startButtonState extends State<startButton> {
         fontSize: 33,
         letterSpacing: 4,
         fontWeight: FontWeight.bold,
-        color: Colors.red[400],
+        color: redShade,
       ),),
     );
   }
