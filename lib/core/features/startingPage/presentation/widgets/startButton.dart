@@ -38,15 +38,6 @@ class _startButtonState extends State<startButton> {
         )
       ),
       child: ElevatedButton(
-        style: ElevatedButton.styleFrom(
-          minimumSize: Size(240, 68),
-          elevation: 8,
-          backgroundColor: Colors.yellow,
-          shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15) // Make the corners square
-          ),
-          // side: BorderSide(color: Colors.black, width: 3,),
-        ),
         onPressed: (){
           Navigator.of(context).pushNamed(chooseSide.id);
         },
