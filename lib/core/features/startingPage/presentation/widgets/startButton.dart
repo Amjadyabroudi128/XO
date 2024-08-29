@@ -15,20 +15,43 @@ class startButton extends StatefulWidget {
 class _startButtonState extends State<startButton> {
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        minimumSize: Size(240, 68),
-        elevation: 8,
-        backgroundColor: Colors.yellow,
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15) // Make the corners square
-        ),
-        side: BorderSide(color: Colors.black, width: 3,),
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15),
+        border: const Border(
+          bottom: BorderSide(
+              color: Colors.black,
+              width: 5.7
+          ),
+          top: BorderSide(
+              color: Colors.black,
+              width: 2
+          ),
+          left:  BorderSide(
+              color: Colors.black,
+              width: 2
+          ),
+          right:  BorderSide(
+              color: Colors.black,
+              width: 2
+          ),
+        )
       ),
-      onPressed: (){
-        Navigator.of(context).pushNamed(chooseSide.id);
-      },
-      child: Text("START", style: googleStyle
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          minimumSize: Size(240, 68),
+          elevation: 8,
+          backgroundColor: Colors.yellow,
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(15) // Make the corners square
+          ),
+          // side: BorderSide(color: Colors.black, width: 3,),
+        ),
+        onPressed: (){
+          Navigator.of(context).pushNamed(chooseSide.id);
+        },
+        child: Text("START", style: googleStyle
+        ),
       ),
     );
   }
