@@ -33,7 +33,6 @@ class _startingPageState extends State<startingPage> with SingleTickerProviderSt
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red[400],
       body:  FadeTransition(
         opacity: animation,
         child: SingleChildScrollView(
