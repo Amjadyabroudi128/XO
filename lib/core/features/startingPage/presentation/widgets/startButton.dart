@@ -26,12 +26,7 @@ class _startButtonState extends State<startButton> {
         side: BorderSide(color: Colors.black, width: 3,),
       ),
       onPressed: (){
-        Navigator.of(context).push(
-          MaterialPageRoute(
-            builder: (context) => chooseSide(),
-          ),
-        );
-
+        Navigator.of(context).pushNamed(chooseSide.id);
       },
       child: Text("START", style: googleStyle
       ),
