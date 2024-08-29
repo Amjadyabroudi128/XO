@@ -49,7 +49,8 @@ class _StartingPageState extends State<startingPage> with TickerProviderStateMix
 
     textController = duration;
     textAnimation = myController.animate(textController);
-     textSlideAnimation = Tween<Offset>(begin: Offset(-1.0, 0.0),
+     textSlideAnimation = Tween<Offset>(
+       begin: Offset(0.0, -1.0),
        end: Offset(0.0, 0.0),
      ).animate(textController);
      textController.forward();
