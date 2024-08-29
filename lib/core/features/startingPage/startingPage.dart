@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/icons.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/slidingIcons.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/slidingText.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/startButton.dart';
