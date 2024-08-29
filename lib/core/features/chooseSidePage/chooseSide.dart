@@ -38,14 +38,24 @@ class _chooseSideState extends State<chooseSide> {
                 )
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 80),
-              child: _buildChoiceButton(FontAwesomeIcons.xmark),
+            GestureDetector(
+              onTap: (){
+
+              },
+              child: Padding(
+                padding: const EdgeInsets.only(top: 80),
+                child: _buildChoiceButton(FontAwesomeIcons.xmark),
+              ),
             ),
             SizedBox(height: 40),
-            Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: _buildChoiceButton(FontAwesomeIcons.o),
+            GestureDetector(
+              onTap: () {
+
+              },
+              child: Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: _buildChoiceButton(FontAwesomeIcons.o),
+              ),
             ),
           ],
         ),
