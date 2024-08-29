@@ -32,7 +32,7 @@ class _StartingPageState extends State<startingPage> with TickerProviderStateMix
     controller = duration;
     animation = myController.animate(controller);
     slideAnimation = Tween<Offset>(
-      begin: Offset(0.0, 1.0), // Start from below the screen (bottom)
+      begin: Offset(0.0, 0.39), // Start from below the screen (bottom)
       end: Offset(0.0, 0.0),   // End at the original position
     ).animate(controller);
     controller.forward();
@@ -40,7 +40,7 @@ class _StartingPageState extends State<startingPage> with TickerProviderStateMix
     iconsController = duration;
     iconsAnimation = myController.animate(iconsController);
     iconsSlideAnimation = Tween<Offset>(
-      begin: Offset(0.0, -1.0),
+      begin: Offset(0.0, -0.3),
       end: Offset(0.0, 0.0),
     ).animate(iconsController);
     iconsController.forward();
