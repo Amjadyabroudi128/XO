@@ -30,7 +30,7 @@ class _chooseSideState extends State<chooseSide> {
                 ),
                 SizedBox(width: 5,),
                 Text("Choose a Side", style: GoogleFonts.bungee(
-                  color: Colors.yellow[700],
+                  color: Colors.yellow[800],
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 2
@@ -55,19 +55,27 @@ class _chooseSideState extends State<chooseSide> {
 }
 Widget _buildChoiceButton(IconData symbol) {
   return Container(
-    width: 190,
-    height: 190,
+    width: 220,
+    height: 220,
     decoration: BoxDecoration(
       color: Colors.yellow[600],
       borderRadius: BorderRadius.circular(19),
-      // border: Border.all(
-      //   color: Colors.black,
-      //   width: 4
-      // )
-      border: Border(
+      border: const Border(
         bottom: BorderSide(
           color: Colors.black,
-          width: 5
+          width: 5.7
+        ),
+        top: BorderSide(
+          color: Colors.black,
+          width: 3
+        ),
+        left:  BorderSide(
+            color: Colors.black,
+            width: 3
+        ),
+        right:  BorderSide(
+            color: Colors.black,
+            width: 3
         ),
       )
     ),
@@ -75,7 +83,7 @@ Widget _buildChoiceButton(IconData symbol) {
       child: FaIcon(
         symbol,
         color: Colors.red,
-        size: 170,
+        size: 190,
       )
     ),
   );
