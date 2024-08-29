@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
+import 'package:tic_tac_toe/core/features/chooseSidePage/chooseSide.dart';
 
 class startButton extends StatefulWidget {
   const startButton({
@@ -25,6 +26,11 @@ class _startButtonState extends State<startButton> {
         side: BorderSide(color: Colors.black, width: 3,),
       ),
       onPressed: (){
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => chooseSide(),
+          ),
+        );
 
       },
       child: Text("START", style: googleStyle
