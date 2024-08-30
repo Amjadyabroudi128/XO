@@ -11,6 +11,8 @@ Color? myYellow = Colors.yellow[800];
 // fontWeight
 FontWeight boldie = FontWeight.bold;
 
+// icons 
+Icon goBack = Icon(Icons.arrow_back, color: Colors.white, size: 29,);
  // fontSize
  const double size33 = 33;
 // styles
