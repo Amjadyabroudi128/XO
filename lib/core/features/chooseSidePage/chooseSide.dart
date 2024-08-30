@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:tic_tac_toe/components/iconButton.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
 class chooseSide extends StatefulWidget {
@@ -22,8 +22,8 @@ class _chooseSideState extends State<chooseSide> {
           children: [
             Row(
               children: [
-                IconButton(
-                  icon: Icon(Icons.arrow_back, color: Colors.white, size: 29,),
+                myButton(
+                  icon: goBack,
                   onPressed: (){
                     Navigator.of(context).pop();
                   },
