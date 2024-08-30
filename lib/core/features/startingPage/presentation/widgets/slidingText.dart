@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
 class tic_tac_toe extends StatelessWidget {
