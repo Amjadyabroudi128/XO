@@ -7,7 +7,7 @@ const FaIcon circle = FaIcon(FontAwesomeIcons.o, color: Colors.yellow,size: 150,
 
  // colors
 Color redShade = Colors.red.shade400;
-
+Color? myYellow = Colors.yellow[800];
 // fontWeight
 FontWeight boldie = FontWeight.bold;
 
@@ -19,4 +19,10 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
   letterSpacing: 4,
   fontWeight: boldie,
   color: redShade,
+);
+TextStyle choose = GoogleFonts.bungee(
+    color: myYellow,
+    fontSize: 30,
+    fontWeight: FontWeight.bold,
+    letterSpacing: 2
 );
