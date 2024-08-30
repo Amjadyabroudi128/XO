@@ -13,12 +13,13 @@ class tic_tac_toe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String ticTac = "TIC-TAC-TOE";
     return SlideTransition(
       position: textSlideAnimation,
       child: FadeTransition(
         opacity: textAnimation,
         child: Text(
-          "TIC-TAC-TOE",
+          ticTac,
           style: GoogleFonts.archivoBlack(
             fontSize: 35,
             color: Colors.white,
