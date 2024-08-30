@@ -29,13 +29,7 @@ class _chooseSideState extends State<chooseSide> {
                   },
                 ),
                 SizedBox(width: 5,),
-                Text("Choose a Side", style: GoogleFonts.bungee(
-                  color: Colors.yellow[800],
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 2
-                ),
-                )
+                Text("Choose a Side", style: choose)
               ],
             ),
             GestureDetector(
