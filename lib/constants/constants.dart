@@ -28,3 +28,8 @@ TextStyle choose = GoogleFonts.bungee(
     fontWeight: FontWeight.bold,
     letterSpacing: 2
 );
+ TextStyle slideText = GoogleFonts.archivoBlack(
+   fontSize: 35,
+   color: Colors.white,
+   letterSpacing: 3,
+ );

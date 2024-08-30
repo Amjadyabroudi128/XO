@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tic_tac_toe/constants/constants.dart';
 
 class tic_tac_toe extends StatelessWidget {
   const tic_tac_toe({
@@ -20,11 +21,7 @@ class tic_tac_toe extends StatelessWidget {
         opacity: textAnimation,
         child: Text(
           ticTac,
-          style: GoogleFonts.archivoBlack(
-            fontSize: 35,
-            color: Colors.white,
-            letterSpacing: 3,
-          ),
+          style: slideText
         ),
       ),
     );
