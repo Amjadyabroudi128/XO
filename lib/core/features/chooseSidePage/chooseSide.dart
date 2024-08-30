@@ -23,7 +23,7 @@ class _chooseSideState extends State<chooseSide> {
             Row(
               children: [
                 IconButton(
-                  icon: Icon(Icons.arrow_back, color: Colors.white, size: 24,),
+                  icon: Icon(Icons.arrow_back, color: Colors.white, size: 29,),
                   onPressed: (){
                     Navigator.of(context).pop();
                   },
