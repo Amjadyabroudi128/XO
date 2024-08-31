@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../components/iconButton.dart';
 import '../../../constants/constants.dart';
@@ -24,9 +25,12 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void initializeGame() {
-    currentPlayer = widget.selectedSide;
-    gameEnd = false;
-    occupied = ["", "", "", "", "", "", "", "", ""]; // 9 empty places
+    setState(() {
+      currentPlayer = widget.selectedSide;
+      gameEnd = false;
+      occupied = ["", "", "", "", "", "", "", "", ""]; // 9 empty places
+    });
+
   }
 
   void handleTap(int index) {
@@ -37,38 +41,33 @@ class _GameScreenState extends State<GameScreen> {
           gameEnd = true;
           showDialog(
             context: context,
-            builder: (_) => AlertDialog(
-              icon: Icon(Icons.thumb_up_outlined, size: 60,),
+            builder: (_) {
+              Future.delayed(const Duration(seconds: 3), () {
+                Navigator.of(context).pop(true);
+              });
+              return AlertDialog(
+              icon: Icon(Icons.thumb_up_outlined, size: 90,color: Colors.white,),
               backgroundColor: Colors.transparent,
-              content: Text("Player $currentPlayer wins!"),
+              content: Text("Player $currentPlayer wins!", style: TextStyle(color: Colors.white, fontSize: 40),),
               actions: [
-                TextButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                    initializeGame();
-                  },
-                  child: Text("Play Again"),
-                ),
               ],
-            ),
+            );
+              }
           );
         } else if (!occupied.contains("")) {
           gameEnd = true;
           showDialog(
             context: context,
-            builder: (_) => AlertDialog(
-              title: Text("Game Over"),
-              content: Text("It's a draw!"),
-              actions: [
-                TextButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                    initializeGame();
-                  },
-                  child: Text("Play Again"),
-                ),
-              ],
-            ),
+            builder: (_) {
+              Future.delayed(const Duration(seconds: 3), () {
+                Navigator.of(context).pop(true);
+              });
+              return AlertDialog(
+                icon: Center(child: FaIcon(FontAwesomeIcons.faceFrownOpen, color: Colors.white,size: 90,)),
+                content: Text("It's a draw!", style: TextStyle(color: Colors.white, fontSize: 38),),
+                backgroundColor: Colors.transparent,
+              );
+            }
           );
         } else {
           currentPlayer = currentPlayer == "X" ? "O" : "X";
@@ -105,7 +104,7 @@ class _GameScreenState extends State<GameScreen> {
       body: Column(
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 10, top: 63),
+            padding: EdgeInsets.only(left: 10, top: 80),
             child: Row(
               children: [
                 myButton(
@@ -172,6 +171,13 @@ class _GameScreenState extends State<GameScreen> {
               ),
             ),
           ),
+          gameEnd ? SizedBox() : Text("it's ${currentPlayer} Turn", style: TextStyle(fontSize: 35, color: Colors.white),),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 200),
+            child: gameEnd ? ElevatedButton(onPressed: (){
+              initializeGame();
+            }, child: Text("Game over", style: TextStyle(fontSize: 25),),) : SizedBox(),
+          )
         ],
       ),
     );
