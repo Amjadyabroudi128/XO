@@ -17,7 +17,7 @@ class startButtonTransition extends StatelessWidget {
       position: slideAnimation,
       child: FadeTransition(
         opacity: animation,
-        child: startButton(),  // Ensure this widget is correctly defined
+        child: startButton(),
       ),
     );
   }

@@ -38,7 +38,8 @@ class _GameScreenState extends State<GameScreen> {
           showDialog(
             context: context,
             builder: (_) => AlertDialog(
-              title: Text("Game Over"),
+              icon: Icon(Icons.thumb_up_outlined, size: 60,),
+              backgroundColor: Colors.transparent,
               content: Text("Player $currentPlayer wins!"),
               actions: [
                 TextButton(

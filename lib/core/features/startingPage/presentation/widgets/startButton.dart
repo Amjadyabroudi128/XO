@@ -43,6 +43,7 @@ class _startButtonState extends State<startButton> {
         child: Text("START", style: googleStyle
         ),
       ),
+      // child: startButton()
     );
   }
 }
