@@ -4,6 +4,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tic_tac_toe/components/iconButton.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
+import '../GameScreen/GameScreen.dart';
+
 class chooseSide extends StatefulWidget {
   static const String id = "chooseSide";
   const chooseSide({super.key});
@@ -13,6 +15,14 @@ class chooseSide extends StatefulWidget {
 }
 
 class _chooseSideState extends State<chooseSide> {
+  void chooseSide(String selectedSide) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => GameScreen(selectedSide: selectedSide),
+      ),
+    );
+  }
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -34,7 +44,7 @@ class _chooseSideState extends State<chooseSide> {
             ),
             GestureDetector(
               onTap: (){
-
+                chooseSide("X");
               },
               child: Padding(
                 padding: const EdgeInsets.only(top: 80),
@@ -44,7 +54,7 @@ class _chooseSideState extends State<chooseSide> {
             SizedBox(height: 40),
             GestureDetector(
               onTap: () {
-
+                chooseSide("O");
               },
               child: Padding(
                 padding: const EdgeInsets.only(top: 20),
