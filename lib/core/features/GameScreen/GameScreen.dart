@@ -123,21 +123,36 @@ class _GameScreenState extends State<GameScreen> {
               padding: const EdgeInsets.all(14.0),
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3,
-                  childAspectRatio: 1.0,
-                  crossAxisSpacing: 10.0,
-                  mainAxisSpacing: 10.0,
+                  crossAxisCount: 3, // 3 columns
+                  mainAxisSpacing: 2.0,
+                  crossAxisSpacing: 2.0,
                 ),
                 itemCount: 9,
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () => handleTap(index),
                     child: Container(
-                      decoration: BoxDecoration(
-                        color: Colors.redAccent,
-                        borderRadius: BorderRadius.circular(8.0),
-
+                    decoration: BoxDecoration(
+                    color: redShade, // Red background color
+                    border: Border(
+                      top: BorderSide(
+                        color: Colors.white,
+                        width: index > 2 ? 2 : 0, // Top line for rows 2 and 3
                       ),
+                      left: BorderSide(
+                        color: Colors.white,
+                        width: index % 3 != 0 ? 2 : 0, // Left line for columns 2 and 3
+                      ),
+                      right: BorderSide(
+                        color: Colors.white,
+                        width: (index + 1) % 3 != 0 ? 2 : 0, // Right line for columns 1 and 2
+                      ),
+                      bottom: BorderSide(
+                        color: Colors.white,
+                        width: index < 6 ? 2 : 0, // Bottom line for rows 1 and 2
+                      ),
+                    ),
+                    ),
                       child: Center(
                         child: Text(
                           occupied[index],
