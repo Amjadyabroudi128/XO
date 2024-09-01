@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:tic_tac_toe/core/features/GameScreen/gameOverButton.dart';
 
 import '../../../components/iconButton.dart';
 import '../../../constants/constants.dart';
@@ -172,6 +173,10 @@ class _GameScreenState extends State<GameScreen> {
             ),
           ),
           gameEnd ? SizedBox() : Text("it's ${currentPlayer} Turn", style: TextStyle(fontSize: 35, color: Colors.white),),
+          gameEnd ? Padding(
+            padding: const EdgeInsets.only(bottom: 100),
+            child: gameOver(),
+          ) : SizedBox()
           // Padding(
           //   padding: const EdgeInsets.only(bottom: 100),
           //   child: gameEnd ? ElevatedButton(
