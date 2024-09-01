@@ -15,7 +15,7 @@ class gameOver extends StatelessWidget {
           border: const Border(
             bottom: BorderSide(
                 color: Colors.white,
-                width: 5.7
+                width: 6.8
             ),
             top: BorderSide(
                 color: Colors.white,
