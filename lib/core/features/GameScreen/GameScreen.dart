@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/gameOverButton.dart';
 
 import '../../../components/iconButton.dart';
@@ -173,17 +174,28 @@ class _GameScreenState extends State<GameScreen> {
             ),
           ),
           gameEnd ? SizedBox.shrink() : Padding(
-            padding: const EdgeInsets.only(bottom: 140),
+            padding: const EdgeInsets.only(bottom: 50),
             child: Text("it's ${currentPlayer} Turn", style: TextStyle(fontSize: 35, color: Colors.white),),
           ),
           gameEnd ? Padding(
-            padding: const EdgeInsets.only(bottom: 100),
+            padding: const EdgeInsets.only(bottom: 20),
             child: gameOver(
               onPressed: (){
                 initializeGame();
               },
             ),
-          ) : SizedBox.shrink()
+          ) : SizedBox.shrink(),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 83),
+            child: TextButton(
+                onPressed: (){
+                  Navigator.of(context).pushNamed("startingPage");
+                },
+                child: Text("MAIN MENU", style: GoogleFonts.archivoBlack(
+              color: Colors.white,
+              fontSize: 27
+            ))),
+          )
         ],
       ),
     );
