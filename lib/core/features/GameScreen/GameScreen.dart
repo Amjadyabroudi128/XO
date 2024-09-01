@@ -172,22 +172,18 @@ class _GameScreenState extends State<GameScreen> {
               ),
             ),
           ),
-          gameEnd ? SizedBox() : Text("it's ${currentPlayer} Turn", style: TextStyle(fontSize: 35, color: Colors.white),),
+          gameEnd ? SizedBox.shrink() : Padding(
+            padding: const EdgeInsets.only(bottom: 140),
+            child: Text("it's ${currentPlayer} Turn", style: TextStyle(fontSize: 35, color: Colors.white),),
+          ),
           gameEnd ? Padding(
             padding: const EdgeInsets.only(bottom: 100),
-            child: gameOver(),
-          ) : SizedBox()
-          // Padding(
-          //   padding: const EdgeInsets.only(bottom: 100),
-          //   child: gameEnd ? ElevatedButton(
-          //     onPressed: (){
-          //     initializeGame();
-          //   },
-          //     style: ButtonStyle(
-          //       backgroundColor: WidgetStateColor.transparent
-          //     ),
-          //     child: Text("Game over", style: TextStyle(fontSize: 25, color: Colors.white),),) : SizedBox(),
-          // ),
+            child: gameOver(
+              onPressed: (){
+                initializeGame();
+              },
+            ),
+          ) : SizedBox.shrink()
         ],
       ),
     );
