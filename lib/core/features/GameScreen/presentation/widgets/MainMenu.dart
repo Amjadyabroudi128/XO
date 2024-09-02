@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tic_tac_toe/constants/constants.dart';
 
 class mainMenu extends StatelessWidget {
   const mainMenu({
@@ -14,10 +15,7 @@ class mainMenu extends StatelessWidget {
           onPressed: (){
             Navigator.of(context).pushNamed("startingPage");
           },
-          child: Text("MAIN MENU", style: GoogleFonts.archivoBlack(
-              color: Colors.white,
-              fontSize: 27
-          ))),
+          child: Text("MAIN MENU", style: menuStyle)),
     );
   }
 }
