@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+import 'package:tic_tac_toe/components/iconButton.dart';
+
+import '../../../../../constants/constants.dart';
+
+class goback extends StatelessWidget {
+  const goback({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return myButton(
+      icon: goBack,
+      onPressed: (){
+        Navigator.of(context).pop();
+      },
+    );
+  }
+}

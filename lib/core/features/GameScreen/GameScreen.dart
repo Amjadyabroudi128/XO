@@ -66,7 +66,7 @@ class _GameScreenState extends State<GameScreen> {
               Future.delayed(const Duration(seconds: 3), () {
                 Navigator.of(context).pop(true);
               });
-              return AlertDialog(
+              return const AlertDialog(
                 icon: Center(child: FaIcon(FontAwesomeIcons.faceFrownOpen, color: Colors.white,size: 90,)),
                 content: Text("It's a draw!", style: TextStyle(color: Colors.white, fontSize: 38),),
                 backgroundColor: Colors.transparent,
@@ -111,12 +111,7 @@ class _GameScreenState extends State<GameScreen> {
             padding: EdgeInsets.only(left: 10, top: 80),
             child: Row(
               children: [
-                myButton(
-                  icon: goBack,
-                  onPressed: (){
-                    Navigator.of(context).pop();
-                  },
-                ),
+                goback(),
                 SizedBox(width: 20,),
                 Text("TIC-TAC-TOE", style: slideText),
               ],
@@ -187,6 +182,22 @@ class _GameScreenState extends State<GameScreen> {
          gameEnd ? mainMenu() : SizedBox.shrink()
         ],
       ),
+    );
+  }
+}
+
+class goback extends StatelessWidget {
+  const goback({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return myButton(
+      icon: goBack,
+      onPressed: (){
+        Navigator.of(context).pop();
+      },
     );
   }
 }
