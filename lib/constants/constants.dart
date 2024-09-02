@@ -24,7 +24,12 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
   fontWeight: boldie,
   color: redShade,
 );
-TextStyle choose = GoogleFonts.bungee(
+     TextStyle menuStyle = GoogleFonts.archivoBlack(
+         color: Colors.white,
+         fontSize: 27
+     );
+
+   TextStyle choose = GoogleFonts.bungee(
     color: myYellow,
     fontSize: 30,
     fontWeight: FontWeight.bold,
