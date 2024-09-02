@@ -9,12 +9,12 @@ const FaIcon circle = FaIcon(FontAwesomeIcons.o, color: Colors.yellow,size: 150,
  // colors
 Color redShade = Colors.red.shade400;
 Color? myYellow = Colors.yellow[800];
-Color whiteIcon = Colors.white;
+Color myWhite = Colors.white;
 // fontWeight
 FontWeight boldie = FontWeight.bold;
 
 // icons 
-Icon goBack = Icon(Icons.arrow_back, color: whiteIcon, size: 29,);
+Icon goBack = Icon(Icons.arrow_back, color: myWhite, size: 29,);
  // fontSize
  const double size33 = 33;
 // styles
