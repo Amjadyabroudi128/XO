@@ -5,6 +5,7 @@ import 'package:tic_tac_toe/core/features/GameScreen/gameOverButton.dart';
 
 import '../../../components/iconButton.dart';
 import '../../../constants/constants.dart';
+import 'currentPlayerText.dart';
 
 class GameScreen extends StatefulWidget {
   final String selectedSide;
@@ -173,10 +174,7 @@ class _GameScreenState extends State<GameScreen> {
               ),
             ),
           ),
-          gameEnd ? SizedBox.shrink() : Padding(
-            padding: const EdgeInsets.only(bottom: 50),
-            child: Text("it's ${currentPlayer} Turn", style: TextStyle(fontSize: 35, color: Colors.white),),
-          ),
+          gameEnd ? SizedBox.shrink() : currentPlayerText(currentPlayer: currentPlayer),
           gameEnd ? Padding(
             padding: const EdgeInsets.only(bottom: 20),
             child: gameOver(
@@ -185,7 +183,7 @@ class _GameScreenState extends State<GameScreen> {
               },
             ),
           ) : SizedBox.shrink(),
-          Padding(
+         gameEnd ? Padding(
             padding: const EdgeInsets.only(bottom: 83),
             child: TextButton(
                 onPressed: (){
@@ -195,7 +193,7 @@ class _GameScreenState extends State<GameScreen> {
               color: Colors.white,
               fontSize: 27
             ))),
-          )
+          ) : SizedBox.shrink()
         ],
       ),
     );
