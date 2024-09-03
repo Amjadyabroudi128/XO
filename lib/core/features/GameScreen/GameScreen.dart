@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:tic_tac_toe/components/futureDelay.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/MainMenu.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/gameOverButton.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/goBack.dart';
@@ -44,9 +45,7 @@ class _GameScreenState extends State<GameScreen> {
           showDialog(
             context: context,
             builder: (_) {
-              Future.delayed(const Duration(seconds: 3), () {
-                Navigator.of(context).pop(true);
-              });
+              alertTimer(context);
               return AlertDialog(
               icon: Icon(Icons.thumb_up_outlined, size: 90,color: Colors.white,),
               backgroundColor: Colors.transparent,
