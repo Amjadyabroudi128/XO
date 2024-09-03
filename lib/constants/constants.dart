@@ -12,7 +12,7 @@ Color? myYellow = Colors.yellow[800];
 Color myWhite = Colors.white;
 // fontWeight
 FontWeight boldie = FontWeight.bold;
-
+double font70 = 70;
 // icons 
 Icon goBack = Icon(Icons.arrow_back, color: myWhite, size: 29,);
  // fontSize

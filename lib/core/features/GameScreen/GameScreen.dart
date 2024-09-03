@@ -154,7 +154,7 @@ class _GameScreenState extends State<GameScreen> {
                         child: Text(
                           occupied[index],
                           style: TextStyle(
-                            fontSize: 70.0,
+                            fontSize: font70,
                             fontWeight: FontWeight.bold,
                             color: occupied[index] == "X"
                                 ? myYellow
