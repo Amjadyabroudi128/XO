@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tic_tac_toe/components/futureDelay.dart';
+import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/DrawWidget.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/MainMenu.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/gameOverButton.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/goBack.dart';
@@ -61,11 +62,7 @@ class _GameScreenState extends State<GameScreen> {
             context: context,
             builder: (_) {
               alertTimer(context);
-              return const AlertDialog(
-                icon: Center(child: FaIcon(FontAwesomeIcons.faceFrownOpen, color: Colors.white,size: 90,)),
-                content: Text("It's a draw!", style: TextStyle(color: Colors.white, fontSize: 38),),
-                backgroundColor: Colors.transparent,
-              );
+              return DrawWidget();
             }
           );
         } else {
@@ -180,5 +177,6 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 }
+
 
 
