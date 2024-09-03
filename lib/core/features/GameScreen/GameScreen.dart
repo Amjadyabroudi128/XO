@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tic_tac_toe/components/futureDelay.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/DrawWidget.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/MainMenu.dart';
