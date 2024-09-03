@@ -60,9 +60,7 @@ class _GameScreenState extends State<GameScreen> {
           showDialog(
             context: context,
             builder: (_) {
-              Future.delayed(const Duration(seconds: 3), () {
-                Navigator.of(context).pop(true);
-              });
+              alertTimer(context);
               return const AlertDialog(
                 icon: Center(child: FaIcon(FontAwesomeIcons.faceFrownOpen, color: Colors.white,size: 90,)),
                 content: Text("It's a draw!", style: TextStyle(color: Colors.white, fontSize: 38),),
