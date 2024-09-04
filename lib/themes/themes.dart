@@ -17,6 +17,9 @@ class AppTheme {
         ),
       ),
     ),
-    dialogBackgroundColor: Colors.transparent
+    dialogBackgroundColor: Colors.transparent,
+    dialogTheme: DialogTheme(
+      iconColor: myWhite
+    )
   );
  }
