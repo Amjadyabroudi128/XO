@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tic_tac_toe/constants/constants.dart';
 
 class winWidget extends StatelessWidget {
   const winWidget({
@@ -11,7 +12,7 @@ class winWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      icon: Icon(Icons.thumb_up_outlined, size: 90,color: Colors.white,),
+      icon: thumbsUp,
       backgroundColor: Colors.transparent,
       content: Text("Player $currentPlayer wins!", style: TextStyle(color: Colors.white, fontSize: 40),),
       actions: [
