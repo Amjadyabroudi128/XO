@@ -40,3 +40,4 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
    color: Colors.white,
    letterSpacing: 3,
  );
+ TextStyle win =  TextStyle(color: Colors.white, fontSize: 40);
