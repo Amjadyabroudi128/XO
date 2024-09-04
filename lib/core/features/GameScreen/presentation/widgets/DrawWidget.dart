@@ -9,7 +9,7 @@ class DrawWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const AlertDialog(
-      icon: Center(child: FaIcon(FontAwesomeIcons.faceFrownOpen, color: Colors.white,size: 90,)),
+      icon: Center(child: FaIcon(FontAwesomeIcons.faceFrownOpen,size: 90,)),
       content: Text("It's a draw!", style: TextStyle(color: Colors.white, fontSize: 38),),
     );
   }
