@@ -13,7 +13,6 @@ class winWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return AlertDialog(
       icon: thumbsUp,
-      backgroundColor: Colors.transparent,
       content: Text("Player $currentPlayer wins!", style: TextStyle(color: Colors.white, fontSize: 40),),
       actions: [
       ],
