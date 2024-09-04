@@ -11,7 +11,6 @@ class DrawWidget extends StatelessWidget {
     return const AlertDialog(
       icon: Center(child: FaIcon(FontAwesomeIcons.faceFrownOpen, color: Colors.white,size: 90,)),
       content: Text("It's a draw!", style: TextStyle(color: Colors.white, fontSize: 38),),
-      backgroundColor: Colors.transparent,
     );
   }
 }
