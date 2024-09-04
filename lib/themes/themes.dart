@@ -17,6 +17,6 @@ class AppTheme {
         ),
       ),
     ),
-
+    dialogBackgroundColor: Colors.transparent
   );
  }
