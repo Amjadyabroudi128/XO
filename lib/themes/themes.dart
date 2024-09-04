@@ -19,7 +19,8 @@ class AppTheme {
     ),
     dialogBackgroundColor: Colors.transparent,
     dialogTheme: DialogTheme(
-      iconColor: myWhite
+      iconColor: myWhite,
+      contentTextStyle: win
     )
   );
  }
