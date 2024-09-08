@@ -7,6 +7,9 @@ const FaIcon close = FaIcon(FontAwesomeIcons.xmark, color: Colors.yellow, size: 
 const FaIcon circle = FaIcon(FontAwesomeIcons.o, color: Colors.yellow,size: 150, );
 const Icon thumbsUp = Icon(Icons.thumb_up_alt_outlined, size: 130,color: Colors.yellow,);
 const FaIcon frown = FaIcon(FontAwesomeIcons.faceFrownOpen,size: 90,);
+
+// Size
+Size buttonSize = Size(240, 68);
  // colors
 Color redShade = Colors.red.shade400;
 Color? myYellow = Colors.yellow[800];

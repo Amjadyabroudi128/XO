@@ -9,7 +9,7 @@ class AppTheme {
     scaffoldBackgroundColor: redShade,
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        minimumSize: Size(240, 68),
+        minimumSize: buttonSize,
         elevation: 8,
         backgroundColor: iconYellow,
         shape: RoundedRectangleBorder(
