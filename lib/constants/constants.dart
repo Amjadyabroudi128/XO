@@ -26,7 +26,7 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
   color: redShade,
 );
      TextStyle menuStyle = GoogleFonts.archivoBlack(
-         color: Colors.white,
+         color: myWhite,
          fontSize: 27
      );
 
@@ -38,8 +38,8 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
 );
  TextStyle slideText = GoogleFonts.archivoBlack(
    fontSize: 35,
-   color: Colors.white,
+   color: myWhite,
    letterSpacing: 3,
  );
- TextStyle win =  TextStyle(color: Colors.white, fontSize: 40);
- TextStyle alertDialog = TextStyle(color: Colors.white, fontSize: 38);
+ TextStyle win =  TextStyle(color: myWhite, fontSize: 40);
+ TextStyle alertDialog = TextStyle(color: myWhite, fontSize: 38);
