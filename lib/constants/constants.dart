@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 // icons
 const FaIcon close = FaIcon(FontAwesomeIcons.xmark, color: Colors.yellow, size: 170,);
 const FaIcon circle = FaIcon(FontAwesomeIcons.o, color: Colors.yellow,size: 150, );
-const Icon thumbsUp = Icon(Icons.thumb_up_outlined, size: 90,);
+const Icon thumbsUp = Icon(Icons.thumb_up_alt_outlined, size: 130,color: Colors.yellow,);
 const FaIcon frown = FaIcon(FontAwesomeIcons.faceFrownOpen,size: 90,);
  // colors
 Color redShade = Colors.red.shade400;
