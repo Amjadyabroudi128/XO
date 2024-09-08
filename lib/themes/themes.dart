@@ -1,10 +1,12 @@
 
 
- import 'package:flutter/material.dart';
+ import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
 class AppTheme {
-
+  static final OutlinedBorder circle = RoundedRectangleBorder(
+      borderRadius: BorderRadius.circular(15));
   static final themeData = ThemeData().copyWith(
     scaffoldBackgroundColor: redShade,
     elevatedButtonTheme: ElevatedButtonThemeData(
@@ -12,9 +14,7 @@ class AppTheme {
         minimumSize: buttonSize,
         elevation: 8,
         backgroundColor: iconYellow,
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15) // Make the corners square
-        ),
+        shape: circle,
       ),
     ),
     dialogBackgroundColor: Colors.transparent,
