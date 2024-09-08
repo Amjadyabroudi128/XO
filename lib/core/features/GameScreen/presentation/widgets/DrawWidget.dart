@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
 class DrawWidget extends StatelessWidget {
@@ -10,7 +9,7 @@ class DrawWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  AlertDialog(
-      icon: Center(child: FaIcon(FontAwesomeIcons.faceFrownOpen,size: 90,)),
+      icon: Center(child: frown),
       content: Text("It's a draw!", style: alertDialog),
     );
   }
