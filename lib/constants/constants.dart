@@ -41,3 +41,4 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
    letterSpacing: 3,
  );
  TextStyle win =  TextStyle(color: Colors.white, fontSize: 40);
+ TextStyle alertDialog = TextStyle(color: Colors.white, fontSize: 38);
