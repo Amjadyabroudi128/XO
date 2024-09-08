@@ -11,7 +11,7 @@ class AppTheme {
       style: ElevatedButton.styleFrom(
         minimumSize: Size(240, 68),
         elevation: 8,
-        backgroundColor: Colors.yellow,
+        backgroundColor: iconYellow,
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15) // Make the corners square
         ),
