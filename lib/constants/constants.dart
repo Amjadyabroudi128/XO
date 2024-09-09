@@ -25,6 +25,7 @@ Icon goBack = Icon(Icons.arrow_back, color: myWhite, size: 29,);
 
  // fontSize
  const double size33 = 33;
+ const size300 = SizedBox(height: 300,);
 
 // styles
 TextStyle googleStyle = GoogleFonts.aBeeZee(
