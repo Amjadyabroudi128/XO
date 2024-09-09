@@ -8,9 +8,10 @@ class DrawWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String draw = "It's a Draw!";
     return  AlertDialog(
       icon: Center(child: frown),
-      content: Text("It's a draw!", style: alertDialog),
+      content: Text(draw, style: alertDialog),
     );
   }
 }
