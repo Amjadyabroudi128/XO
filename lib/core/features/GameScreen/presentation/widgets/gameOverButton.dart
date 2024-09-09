@@ -36,11 +36,8 @@ class gameOver extends StatelessWidget {
           backgroundColor: redShade
         ),
         onPressed: onPressed,
-        child: Text("PLAY AGAIN", style: GoogleFonts.anton(
-          letterSpacing: 3,
-          color: Colors.white,
-          fontSize: 30
-        ),),
+        child: Text("PLAY AGAIN", style: playAgain
+        ),
       ),
     );
   }

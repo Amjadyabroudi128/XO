@@ -52,3 +52,8 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
  );
  TextStyle win =  TextStyle(color: myWhite, fontSize: 40);
  TextStyle alertDialog = TextStyle(color: myWhite, fontSize: 38);
+ TextStyle playAgain = GoogleFonts.anton(
+     letterSpacing: 3,
+     color: myWhite,
+     fontSize: 30
+ );
