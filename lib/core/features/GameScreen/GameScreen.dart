@@ -159,16 +159,20 @@ class _GameScreenState extends State<GameScreen> {
           gameEnd ? SizedBox.shrink() : currentPlayerText(currentPlayer: currentPlayer),
           gameEnd ? Padding(
             padding: const EdgeInsets.only(bottom: 20),
-            child: gameOver(
-              onPressed: (){
-                initializeGame();
-              },
-            ),
+            child: endGame(),
           ) : SizedBox.shrink(),
          gameEnd ? mainMenu() : SizedBox.shrink()
         ],
       ),
     );
+  }
+
+  gameOver endGame() {
+    return gameOver(
+            onPressed: (){
+              initializeGame();
+            },
+          );
   }
 }
 
