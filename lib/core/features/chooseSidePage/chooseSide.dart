@@ -42,15 +42,7 @@ class _chooseSideState extends State<chooseSide> {
                 Text("Choose a Side", style: choose)
               ],
             ),
-            GestureDetector(
-              onTap: (){
-                chooseSide("X");
-              },
-              child: Padding(
-                padding: const EdgeInsets.only(top: 80),
-                child: _buildChoiceButton(FontAwesomeIcons.xmark),
-              ),
-            ),
+            tapX(),
             SizedBox(height: 40),
             GestureDetector(
               onTap: () {
@@ -65,6 +57,18 @@ class _chooseSideState extends State<chooseSide> {
         ),
       )
     );
+  }
+
+  GestureDetector tapX() {
+    return GestureDetector(
+            onTap: (){
+              chooseSide("X");
+            },
+            child: Padding(
+              padding: const EdgeInsets.only(top: 80),
+              child: _buildChoiceButton(FontAwesomeIcons.xmark),
+            ),
+          );
   }
 }
 Widget _buildChoiceButton(IconData symbol) {
