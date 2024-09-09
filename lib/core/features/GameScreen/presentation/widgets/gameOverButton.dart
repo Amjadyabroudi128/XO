@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tic_tac_toe/components/elevatedButton.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
 class gameOver extends StatelessWidget {
@@ -31,14 +32,14 @@ class gameOver extends StatelessWidget {
             ),
           )
       ),
-      child: ElevatedButton(
+      child: kElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: redShade
         ),
         onPressed: onPressed,
-        child: Text("PLAY AGAIN", style: playAgain
-        ),
+        child: Text("PLAY AGAIN", style: playAgain,),
       ),
+
     );
   }
 }
