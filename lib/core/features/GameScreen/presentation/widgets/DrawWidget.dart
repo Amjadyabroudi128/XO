@@ -10,8 +10,16 @@ class DrawWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     String draw = "It's a Draw!";
     return  AlertDialog(
-      icon: Center(child: frown),
-      content: Text(draw, style: alertDialog),
+      icon: Padding(
+        padding: const EdgeInsets.only(left: 70),
+        child: frown,
+      ),
+      content: Padding(
+        padding: const EdgeInsets.only(left: 20),
+        child: Text(draw, style: alertDialog),
+      ),
+      actions: [
+      ],
     );
   }
 }
