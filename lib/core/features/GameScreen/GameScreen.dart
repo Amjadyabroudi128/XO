@@ -143,7 +143,7 @@ class _GameScreenState extends State<GameScreen> {
                           occupied[index],
                           style: TextStyle(
                             fontSize: font70,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: boldie,
                             color: occupied[index] == "X"
                                 ? myYellow
                                 : myYellow,
