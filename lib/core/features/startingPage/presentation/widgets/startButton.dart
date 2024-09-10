@@ -13,8 +13,10 @@ class startButton extends StatefulWidget {
 }
 
 class _startButtonState extends State<startButton> {
+
   @override
   Widget build(BuildContext context) {
+    String start = "START";
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
@@ -24,7 +26,7 @@ class _startButtonState extends State<startButton> {
         onPressed: (){
           Navigator.of(context).pushNamed(chooseSide.id);
         },
-        child: Text("START", style: googleStyle,),
+        child: Text(start, style: googleStyle,),
       ),
     );
   }
