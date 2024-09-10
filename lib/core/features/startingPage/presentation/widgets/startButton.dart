@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tic_tac_toe/components/elevatedButton.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 import 'package:tic_tac_toe/core/features/chooseSidePage/chooseSide.dart';
 
@@ -36,14 +37,12 @@ class _startButtonState extends State<startButton> {
           ),
         )
       ),
-      child: ElevatedButton(
+      child: kElevatedButton(
         onPressed: (){
           Navigator.of(context).pushNamed(chooseSide.id);
         },
-        child: Text("START", style: googleStyle
-        ),
+        child: Text("START", style: googleStyle,),
       ),
-      // child: startButton()
     );
   }
 }
