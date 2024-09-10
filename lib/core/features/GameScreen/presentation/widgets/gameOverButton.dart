@@ -9,6 +9,7 @@ class gameOver extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String again = "PLAY AGAIN";
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
@@ -19,7 +20,7 @@ class gameOver extends StatelessWidget {
           backgroundColor: redShade
         ),
         onPressed: onPressed,
-        child: Text("PLAY AGAIN", style: playAgain,),
+        child: Text(again, style: playAgain,),
       ),
 
     );
