@@ -57,3 +57,21 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
      color: myWhite,
      fontSize: 30
  );
+ Border startBorder = const Border(
+   bottom: BorderSide(
+       color: Colors.black,
+       width: 5.7
+   ),
+   top: BorderSide(
+       color: Colors.black,
+       width: 2
+   ),
+   left:  BorderSide(
+       color: Colors.black,
+       width: 2
+   ),
+   right:  BorderSide(
+       color: Colors.black,
+       width: 2
+   ),
+ );
