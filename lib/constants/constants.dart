@@ -16,6 +16,7 @@ Color? myYellow = Colors.yellow[800];
 Color myWhite = Colors.white;
 Color iconYellow = Colors.yellow;
 Color darkBorders = Colors.black;
+Color? yellow600 = Colors.yellow[600];
 // fontWeight
 FontWeight boldie = FontWeight.bold;
 double font70 = 70;
@@ -115,7 +116,7 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
      border: endBorder
  );
  Decoration choices = BoxDecoration(
-     color: Colors.yellow[600],
+     color: yellow600,
      borderRadius: BorderRadius.circular(19),
      border:  side
  );
