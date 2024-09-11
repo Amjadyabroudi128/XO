@@ -90,3 +90,7 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
        width: 2
    ),
  );
+ Decoration box = BoxDecoration(
+     borderRadius: BorderRadius.circular(15),
+     border: endBorder
+ );
