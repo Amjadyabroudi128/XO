@@ -54,6 +54,7 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
  TextStyle alertDialog = TextStyle(color: myWhite, fontSize: 38);
  TextStyle playAgain = GoogleFonts.anton(letterSpacing: 3, color: myWhite, fontSize: 30);
  TextStyle player = TextStyle(fontSize: 35, color: myWhite);
+ // Borders
  Border startBorder =  Border(
    bottom: BorderSide(
        color: darkBorders,
@@ -90,6 +91,25 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
        width: 2
    ),
  );
+ Border side =  Border(
+   bottom: BorderSide(
+       color: darkBorders,
+       width: 5.7
+   ),
+   top: BorderSide(
+       color: darkBorders,
+       width: 3
+   ),
+   left:  BorderSide(
+       color:darkBorders,
+       width: 3
+   ),
+   right:  BorderSide(
+       color: darkBorders,
+       width: 3
+   ),
+ );
+ // decoration
  Decoration box = BoxDecoration(
      borderRadius: BorderRadius.circular(15),
      border: endBorder
