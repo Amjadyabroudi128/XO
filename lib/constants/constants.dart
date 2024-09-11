@@ -75,21 +75,21 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
        width: 2
    ),
  );
- Border endBorder = const Border(
+ Border endBorder =  Border(
    bottom: BorderSide(
-       color: Colors.white,
+       color: myWhite,
        width: 6.8
    ),
    top: BorderSide(
-       color: Colors.white,
+       color: myWhite,
        width: 2
    ),
    left:  BorderSide(
-       color: Colors.white,
+       color: myWhite,
        width: 2
    ),
    right:  BorderSide(
-       color: Colors.white,
+       color: myWhite,
        width: 2
    ),
  );
