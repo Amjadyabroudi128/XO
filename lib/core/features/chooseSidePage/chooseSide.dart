@@ -75,11 +75,7 @@ Widget _buildChoiceButton(IconData symbol) {
   return Container(
     width: 220,
     height: 220,
-    decoration: BoxDecoration(
-      color: Colors.yellow[600],
-      borderRadius: BorderRadius.circular(19),
-      border:  side
-    ),
+    decoration: choices,
     child: Center(
       child: FaIcon(
         symbol,
