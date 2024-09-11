@@ -15,7 +15,7 @@ Color redShade = Colors.red.shade400;
 Color? myYellow = Colors.yellow[800];
 Color myWhite = Colors.white;
 Color iconYellow = Colors.yellow;
-
+Color darkBorders = Colors.black;
 // fontWeight
 FontWeight boldie = FontWeight.bold;
 double font70 = 70;
@@ -57,21 +57,21 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
      color: myWhite,
      fontSize: 30
  );
- Border startBorder = const Border(
+ Border startBorder =  Border(
    bottom: BorderSide(
-       color: Colors.black,
+       color: darkBorders,
        width: 5.7
    ),
    top: BorderSide(
-       color: Colors.black,
+       color: darkBorders,
        width: 2
    ),
    left:  BorderSide(
-       color: Colors.black,
+       color: darkBorders,
        width: 2
    ),
    right:  BorderSide(
-       color: Colors.black,
+       color: darkBorders,
        width: 2
    ),
  );
