@@ -15,10 +15,7 @@ class startContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          border: startBorder
-      ),
+      decoration: box,
       child: kElevatedButton(
         onPressed: (){
           Navigator.of(context).pushNamed(chooseSide.id);
