@@ -113,7 +113,7 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
  // decoration
  Decoration box = BoxDecoration(
      borderRadius: BorderRadius.circular(15),
-     border: endBorder
+     border: startBorder
  );
  Decoration choices = BoxDecoration(
      color: yellow600,
