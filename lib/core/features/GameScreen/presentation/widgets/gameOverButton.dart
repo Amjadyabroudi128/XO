@@ -11,7 +11,7 @@ class gameOver extends StatelessWidget {
   Widget build(BuildContext context) {
     String again = "PLAY AGAIN";
     return Container(
-      decoration: box,
+      decoration: endBox,
       child: kElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: redShade
