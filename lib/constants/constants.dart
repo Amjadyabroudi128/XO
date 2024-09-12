@@ -115,6 +115,10 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
      borderRadius: BorderRadius.circular(15),
      border: startBorder
  );
+Decoration endBox = BoxDecoration(
+    borderRadius: BorderRadius.circular(15),
+    border: endBorder
+);
  Decoration choices = BoxDecoration(
      color: yellow600,
      borderRadius: BorderRadius.circular(19),
