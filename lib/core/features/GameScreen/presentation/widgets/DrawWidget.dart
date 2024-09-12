@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tic_tac_toe/components/AlertDialog.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
 class DrawWidget extends StatelessWidget {
@@ -9,15 +10,15 @@ class DrawWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String draw = "It's a Draw!";
-    return  AlertDialog(
+    return  Alert(
       icon: const Padding(
         padding: EdgeInsets.only(left: 70),
         child: frown,
       ),
-      content: Padding(
-        padding: const EdgeInsets.only(left: 20),
-        child: Text(draw, style: alertDialog),
-      ),
+      myContext:Padding(
+      padding: const EdgeInsets.only(left: 20),
+      child: Text(draw, style: alertDialog),
+    ),
     );
   }
 }
