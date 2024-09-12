@@ -11,9 +11,10 @@ class winWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String playerWins = "Player $currentPlayer wins!";
     return AlertDialog(
       icon: thumbsUp,
-      content: Text("Player $currentPlayer wins!",),
+      content: Text(playerWins),
       actions: [
       ],
     );
