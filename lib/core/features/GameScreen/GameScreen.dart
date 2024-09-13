@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/components/futureDelay.dart';
+import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/DrawWidget.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/MainMenu.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/gameOverButton.dart';
@@ -98,7 +99,7 @@ class _GameScreenState extends State<GameScreen> {
             child: Row(
               children: [
                 goback(),
-                SizedBox(width: 20,),
+                mySpace(width: 20,),
                 Text("TIC-TAC-TOE", style: slideText),
               ],
             ),
