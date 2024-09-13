@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/buttonTransition.dart';
 import 'package:tic_tac_toe/core/features/startingPage/presentation/widgets/slidingIcons.dart';
@@ -71,7 +72,7 @@ class _StartingPageState extends State<startingPage> with TickerProviderStateMix
           children: [
             slidingIcons(iconsSlideAnimation: iconsSlideAnimation, iconsAnimation: iconsAnimation),
             tic_tac_toe(textSlideAnimation: textSlideAnimation, textAnimation: textAnimation),
-            size300,
+            mySpace(height: 350,),
             startButtonTransition(slideAnimation: slideAnimation, animation: animation),
           ],
         ),
