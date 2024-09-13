@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
 class mySpace extends StatelessWidget {
-  const mySpace({super.key});
+  final double? height;
+  final double? width;
+  final Widget? child;
+  const mySpace({super.key, this.height, this.width, this.child});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SizedBox(
+      height: height,
+      width: width,
+      child: child,
+    );
   }
 }
