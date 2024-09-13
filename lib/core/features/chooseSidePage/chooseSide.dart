@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tic_tac_toe/components/iconButton.dart';
+import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
 import '../GameScreen/GameScreen.dart';
@@ -38,12 +39,12 @@ class _chooseSideState extends State<chooseSide> {
                     Navigator.of(context).pop();
                   },
                 ),
-                SizedBox(width: 5,),
+                mySpace(width: 5,),
                 Text("Choose a Side", style: choose)
               ],
             ),
             tapX(),
-            SizedBox(height: 40),
+            mySpace(height: 40),
             GestureDetector(
               onTap: () {
                 chooseSide("O");
