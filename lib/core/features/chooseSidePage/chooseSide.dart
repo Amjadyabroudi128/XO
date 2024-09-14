@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:tic_tac_toe/components/choiceContainer.dart';
 import 'package:tic_tac_toe/components/iconButton.dart';
 import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
@@ -73,10 +74,7 @@ class _chooseSideState extends State<chooseSide> {
   }
 }
 Widget _buildChoiceButton(IconData symbol) {
-  return Container(
-    width: 220,
-    height: 220,
-    decoration: choices,
+  return buttonContainer(
     child: Center(
       child: FaIcon(
         symbol,
