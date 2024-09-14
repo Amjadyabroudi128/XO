@@ -11,6 +11,7 @@ const FaIcon frown = FaIcon(FontAwesomeIcons.faceFrownOpen,size: 90,);
 // Size
 Size buttonSize = Size(240, 68);
  // colors
+Color choiceClr = Colors.red;
 Color redShade = Colors.red.shade400;
 Color? myYellow = Colors.yellow[800];
 Color myWhite = Colors.white;
