@@ -78,7 +78,7 @@ Widget _buildChoiceButton(IconData symbol) {
     child: Center(
       child: FaIcon(
         symbol,
-        color: Colors.red,
+        color: choiceClr,
         size: 190,
       )
     ),
