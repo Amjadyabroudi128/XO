@@ -79,7 +79,7 @@ Widget _buildChoiceButton(IconData symbol) {
       child: FaIcon(
         symbol,
         color: choiceClr,
-        size: 190,
+        size: icon190,
       )
     ),
   );
