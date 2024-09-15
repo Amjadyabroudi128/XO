@@ -51,8 +51,8 @@ class _chooseSideState extends State<chooseSide> {
               onTap: () {
                 chooseSide("O");
               },
-              child: Padding(
-                padding: const EdgeInsets.only(top: 20),
+              child: MyPadding(
+                pad: const EdgeInsets.only(top: 20),
                 child: _buildChoiceButton(FontAwesomeIcons.o),
               ),
             ),
