@@ -28,6 +28,7 @@ class _chooseSideState extends State<chooseSide> {
   }
   @override
   Widget build(BuildContext context) {
+    String pickaSide = "choose a side";
     return  Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(left: 17, top: 68),
@@ -42,7 +43,7 @@ class _chooseSideState extends State<chooseSide> {
                   },
                 ),
                 mySpace(width: 5,),
-                Text("Choose a Side", style: choose)
+                Text( pickaSide, style: choose)
               ],
             ),
             tapX(),
