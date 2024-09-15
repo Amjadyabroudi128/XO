@@ -6,6 +6,7 @@ import 'package:tic_tac_toe/components/iconButton.dart';
 import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
+import '../../../components/chooseSide.dart';
 import '../../../components/padding.dart';
 import '../GameScreen/GameScreen.dart';
 
@@ -18,20 +19,12 @@ class chooseSide extends StatefulWidget {
 }
 
 class _chooseSideState extends State<chooseSide> {
-  void chooseSide(String selectedSide) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => GameScreen(selectedSide: selectedSide),
-      ),
-    );
-  }
   @override
   Widget build(BuildContext context) {
     String pickaSide = "choose a side";
     return  Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(left: 17, top: 68),
+      body: MyPadding(
+        pad: const EdgeInsets.only(left: 17, top: 68),
         child: Column(
           children: [
             Row(
@@ -50,7 +43,7 @@ class _chooseSideState extends State<chooseSide> {
             mySpace(height: 40),
             GestureDetector(
               onTap: () {
-                chooseSide("O");
+                pickSide(context, "O");
               },
               child: MyPadding(
                 pad: const EdgeInsets.only(top: 20),
@@ -66,7 +59,7 @@ class _chooseSideState extends State<chooseSide> {
   GestureDetector tapX() {
     return GestureDetector(
             onTap: (){
-              chooseSide("X");
+              pickSide(context, "X");
             },
             child: MyPadding(
               pad:  EdgeInsets.only(top: 80),
