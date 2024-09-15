@@ -6,6 +6,7 @@ import 'package:tic_tac_toe/components/iconButton.dart';
 import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
+import '../../../components/padding.dart';
 import '../GameScreen/GameScreen.dart';
 
 class chooseSide extends StatefulWidget {
@@ -66,8 +67,8 @@ class _chooseSideState extends State<chooseSide> {
             onTap: (){
               chooseSide("X");
             },
-            child: Padding(
-              padding: const EdgeInsets.only(top: 80),
+            child: MyPadding(
+              pad:  EdgeInsets.only(top: 80),
               child: _buildChoiceButton(FontAwesomeIcons.xmark),
             ),
           );
