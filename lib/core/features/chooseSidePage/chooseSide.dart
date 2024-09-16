@@ -9,6 +9,7 @@ import 'package:tic_tac_toe/constants/constants.dart';
 import '../../../components/chooseSide.dart';
 import '../../../components/padding.dart';
 import '../GameScreen/GameScreen.dart';
+import 'buildChoiceButton.dart';
 
 class chooseSide extends StatefulWidget {
   static const String id = "chooseSide";
@@ -47,7 +48,7 @@ class _chooseSideState extends State<chooseSide> {
               },
               child: MyPadding(
                 pad: const EdgeInsets.only(top: 20),
-                child: _buildChoiceButton(FontAwesomeIcons.o),
+                child: buildChoiceButton(FontAwesomeIcons.o),
               ),
             ),
           ],
@@ -63,19 +64,8 @@ class _chooseSideState extends State<chooseSide> {
             },
             child: MyPadding(
               pad:  EdgeInsets.only(top: 80),
-              child: _buildChoiceButton(FontAwesomeIcons.xmark),
+              child: buildChoiceButton(FontAwesomeIcons.xmark),
             ),
           );
   }
-}
-Widget _buildChoiceButton(IconData symbol) {
-  return buttonContainer(
-    child: Center(
-      child: FaIcon(
-        symbol,
-        color: choiceClr,
-        size: icon190,
-      )
-    ),
-  );
 }
