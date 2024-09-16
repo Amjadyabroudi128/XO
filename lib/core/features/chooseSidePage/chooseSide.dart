@@ -6,6 +6,7 @@ import 'package:tic_tac_toe/constants/constants.dart';
 import 'package:tic_tac_toe/core/features/chooseSidePage/tapO.dart';
 import 'package:tic_tac_toe/core/features/chooseSidePage/tapX.dart';
 import '../../../components/padding.dart';
+import 'backBtn.dart';
 
 class chooseSide extends StatefulWidget {
   static const String id = "chooseSide";
@@ -26,12 +27,7 @@ class _chooseSideState extends State<chooseSide> {
           children: [
             Row(
               children: [
-                myButton(
-                  icon: goBack,
-                  onPressed: (){
-                    Navigator.of(context).pop();
-                  },
-                ),
+                backBtn(context),
                 mySpace(width: 5,),
                 Text( pickaSide, style: choose)
               ],
@@ -44,6 +40,8 @@ class _chooseSideState extends State<chooseSide> {
       )
     );
   }
+
+
 
 
 
