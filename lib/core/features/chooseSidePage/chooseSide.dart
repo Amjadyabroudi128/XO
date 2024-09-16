@@ -1,16 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:tic_tac_toe/components/choiceContainer.dart';
 import 'package:tic_tac_toe/components/iconButton.dart';
 import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
+import 'package:tic_tac_toe/core/features/chooseSidePage/tapO.dart';
 import 'package:tic_tac_toe/core/features/chooseSidePage/tapX.dart';
-
-import '../../../components/chooseSide.dart';
 import '../../../components/padding.dart';
-import '../GameScreen/GameScreen.dart';
-import 'buildChoiceButton.dart';
 
 class chooseSide extends StatefulWidget {
   static const String id = "chooseSide";
@@ -43,19 +38,13 @@ class _chooseSideState extends State<chooseSide> {
             ),
             tapX(context),
             mySpace(height: 40),
-            GestureDetector(
-              onTap: () {
-                pickSide(context, "O");
-              },
-              child: MyPadding(
-                pad: const EdgeInsets.only(top: 20),
-                child: buildChoiceButton(FontAwesomeIcons.o),
-              ),
-            ),
+            tapO(context),
           ],
         ),
       )
     );
   }
+
+
 
 }
