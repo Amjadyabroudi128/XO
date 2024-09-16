@@ -5,6 +5,7 @@ import 'package:tic_tac_toe/components/choiceContainer.dart';
 import 'package:tic_tac_toe/components/iconButton.dart';
 import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
+import 'package:tic_tac_toe/core/features/chooseSidePage/tapX.dart';
 
 import '../../../components/chooseSide.dart';
 import '../../../components/padding.dart';
@@ -40,7 +41,7 @@ class _chooseSideState extends State<chooseSide> {
                 Text( pickaSide, style: choose)
               ],
             ),
-            tapX(),
+            tapX(context),
             mySpace(height: 40),
             GestureDetector(
               onTap: () {
@@ -57,15 +58,4 @@ class _chooseSideState extends State<chooseSide> {
     );
   }
 
-  GestureDetector tapX() {
-    return GestureDetector(
-            onTap: (){
-              pickSide(context, "X");
-            },
-            child: MyPadding(
-              pad:  EdgeInsets.only(top: 80),
-              child: buildChoiceButton(FontAwesomeIcons.xmark),
-            ),
-          );
-  }
 }
