@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/components/iconButton.dart';
 import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
-import 'package:tic_tac_toe/core/features/chooseSidePage/tapO.dart';
-import 'package:tic_tac_toe/core/features/chooseSidePage/tapX.dart';
+import 'package:tic_tac_toe/core/features/chooseSidePage/presentation/tapO.dart';
+import 'package:tic_tac_toe/core/features/chooseSidePage/presentation/tapX.dart';
 import '../../../components/padding.dart';
-import 'backBtn.dart';
+import 'presentation/backBtn.dart';
 
 class chooseSide extends StatefulWidget {
   static const String id = "chooseSide";

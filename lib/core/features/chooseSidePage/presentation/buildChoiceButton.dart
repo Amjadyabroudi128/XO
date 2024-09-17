@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../../../components/choiceContainer.dart';
-import '../../../constants/constants.dart';
+import '../../../../components/choiceContainer.dart';
+import '../../../../constants/constants.dart';
+
 
 Widget buildChoiceButton(IconData symbol) {
   return buttonContainer(
