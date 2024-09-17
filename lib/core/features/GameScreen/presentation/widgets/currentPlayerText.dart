@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tic_tac_toe/components/padding.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
 class currentPlayerText extends StatelessWidget {
@@ -12,8 +13,8 @@ class currentPlayerText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String playersTurn = "it's ${currentPlayer} Turn";
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 180),
+    return MyPadding(
+      pad: EdgeInsets.only(bottom: 180),
       child: Text(playersTurn, style: player,),
     );
   }
