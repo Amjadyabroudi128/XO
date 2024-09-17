@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/components/futureDelay.dart';
+import 'package:tic_tac_toe/components/padding.dart';
 import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/DrawWidget.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/MainMenu.dart';
@@ -159,8 +160,8 @@ class _GameScreenState extends State<GameScreen> {
             ),
           ),
           gameEnd ? SizedBox.shrink() : currentPlayerText(currentPlayer: currentPlayer),
-          gameEnd ? Padding(
-            padding: const EdgeInsets.only(bottom: 20),
+          gameEnd ? MyPadding(
+            pad: const EdgeInsets.only(bottom: 20),
             child: endGame(),
           ) : SizedBox.shrink(),
          gameEnd ? mainMenu() : SizedBox.shrink()
