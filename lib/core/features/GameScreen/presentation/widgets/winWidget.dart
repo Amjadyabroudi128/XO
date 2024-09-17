@@ -16,8 +16,6 @@ class winWidget extends StatelessWidget {
     return Alert(
       icon: thumbsUp,
       myContext: Text(playerWins),
-      actions: [
-      ],
     );
   }
 }
