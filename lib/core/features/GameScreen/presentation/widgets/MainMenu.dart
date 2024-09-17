@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/components/padding.dart';
+import 'package:tic_tac_toe/components/mainMenu.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
 
 class mainMenu extends StatelessWidget {
@@ -12,7 +13,7 @@ class mainMenu extends StatelessWidget {
     String menu = "MAIN MENU";
     return MyPadding(
       pad: const EdgeInsets.only(bottom: 83),
-      child: TextButton(
+      child: menuButton(
           onPressed: (){
             Navigator.of(context).pushNamed("startingPage");
           },
