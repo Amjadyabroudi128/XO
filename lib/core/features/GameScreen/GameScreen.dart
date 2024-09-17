@@ -91,6 +91,7 @@ class _GameScreenState extends State<GameScreen> {
 
   @override
   Widget build(BuildContext context) {
+    String ticTAc = "TIC-TAC-TOE";
     return Scaffold(
       body: Column(
         children: [
@@ -100,7 +101,7 @@ class _GameScreenState extends State<GameScreen> {
               children: [
                 goback(),
                 mySpace(width: 20,),
-                Text("TIC-TAC-TOE", style: slideText),
+                Text(ticTAc, style: slideText),
               ],
             ),
           ),
@@ -168,7 +169,7 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
-  gameOver endGame() {
+  endGame() {
     return gameOver(
             onPressed: (){
               initializeGame();
