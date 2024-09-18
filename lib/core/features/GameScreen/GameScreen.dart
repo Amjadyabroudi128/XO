@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/components/futureDelay.dart';
+import 'package:tic_tac_toe/components/gridView.dart';
 import 'package:tic_tac_toe/components/padding.dart';
 import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/DrawWidget.dart';
@@ -109,14 +110,8 @@ class _GameScreenState extends State<GameScreen> {
           Expanded(
             child: MyPadding(
               pad: const EdgeInsets.all(14.0),
-              child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3, // 3 columns
-                  mainAxisSpacing: 2.0,
-                  crossAxisSpacing: 2.0,
-                ),
-                itemCount: 9,
-                itemBuilder: (context, index) {
+              child: gameBox(
+                building: (context, index) {
                   return GestureDetector(
                     onTap: () => handleTap(index),
                     child: Container(
