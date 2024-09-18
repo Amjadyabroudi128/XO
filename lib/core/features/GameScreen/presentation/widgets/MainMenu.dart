@@ -7,11 +7,11 @@ class mainMenu extends StatelessWidget {
   const mainMenu({
     super.key,
   });
-
+ final String menu = "MAIN MENU";
+ final String startingPage = "startingPage";
   @override
   Widget build(BuildContext context) {
-    String menu = "MAIN MENU";
-    String startingPage = "startingPage";
+
     return MyPadding(
       pad: const EdgeInsets.only(bottom: 83),
       child: menuButton(
