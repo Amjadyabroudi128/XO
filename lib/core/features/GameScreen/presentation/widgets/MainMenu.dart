@@ -11,11 +11,12 @@ class mainMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String menu = "MAIN MENU";
+    String startingPage = "startingPage";
     return MyPadding(
       pad: const EdgeInsets.only(bottom: 83),
       child: menuButton(
           onPressed: (){
-            Navigator.of(context).pushNamed("startingPage");
+            Navigator.of(context).pushNamed(startingPage);
           },
           child: Text(menu, style: menuStyle)),
     );
