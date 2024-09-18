@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/components/futureDelay.dart';
 import 'package:tic_tac_toe/components/gridView.dart';
 import 'package:tic_tac_toe/components/padding.dart';
-import 'package:tic_tac_toe/components/sizedBox.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/DrawWidget.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/MainMenu.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/gameOverButton.dart';
-import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/goBack.dart';
+import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/textBar.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/winWidget.dart';
 import '../../../components/boxDecoration.dart';
 import '../../../constants/constants.dart';
@@ -100,13 +99,7 @@ class _GameScreenState extends State<GameScreen> {
         children: [
           MyPadding(
             pad: EdgeInsets.only(left: 10, top: 80),
-            child: Row(
-              children: [
-                goback(),
-                mySpace(width: 20,),
-                Text(ticTAc, style: slideText),
-              ],
-            ),
+            child: appBarText(ticTAc: ticTAc),
           ),
           Expanded(
             child: MyPadding(
