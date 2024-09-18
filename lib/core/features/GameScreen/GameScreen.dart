@@ -96,8 +96,8 @@ class _GameScreenState extends State<GameScreen> {
     return Scaffold(
       body: Column(
         children: [
-          Padding(
-            padding: EdgeInsets.only(left: 10, top: 80),
+          MyPadding(
+            pad: EdgeInsets.only(left: 10, top: 80),
             child: Row(
               children: [
                 goback(),
