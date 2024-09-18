@@ -107,8 +107,8 @@ class _GameScreenState extends State<GameScreen> {
             ),
           ),
           Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(14.0),
+            child: MyPadding(
+              pad: const EdgeInsets.all(14.0),
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 3, // 3 columns
