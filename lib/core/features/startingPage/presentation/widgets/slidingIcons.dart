@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tic_tac_toe/components/padding.dart';
 
 import 'icons.dart';
 
@@ -14,8 +15,8 @@ class slidingIcons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 120, left: 70),
+    return MyPadding(
+      pad: const EdgeInsets.only(top: 120, left: 70),
       child: SlideTransition(
         position: iconsSlideAnimation,
         child: FadeTransition(
