@@ -8,6 +8,7 @@ import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/MainMe
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/gameOverButton.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/goBack.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/winWidget.dart';
+import '../../../components/boxDecoration.dart';
 import '../../../constants/constants.dart';
 import 'presentation/widgets/currentPlayerText.dart';
 
@@ -115,27 +116,7 @@ class _GameScreenState extends State<GameScreen> {
                   return GestureDetector(
                     onTap: () => handleTap(index),
                     child: Container(
-                    decoration: BoxDecoration(
-                    color: redShade, // Red background color
-                    border: Border(
-                      top: BorderSide(
-                        color: myWhite,
-                        width: index > 2 ? 2 : 0, // Top line for rows 2 and 3
-                      ),
-                      left: BorderSide(
-                        color: myWhite,
-                        width: index % 3 != 0 ? 2 : 0, // Left line for columns 2 and 3
-                      ),
-                      right: BorderSide(
-                        color: myWhite,
-                        width: (index + 1) % 3 != 0 ? 2 : 0, // Right line for columns 1 and 2
-                      ),
-                      bottom: BorderSide(
-                        color: myWhite,
-                        width: index < 6 ? 2 : 0, // Bottom line for rows 1 and 2
-                      ),
-                    ),
-                    ),
+                    decoration: buildBoxDecoration(index),
                       child: Center(
                         child: Text(
                           occupied[index],
