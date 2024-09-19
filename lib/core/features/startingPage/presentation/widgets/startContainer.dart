@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zapx/zapx.dart';
 
 import '../../../../../components/elevatedButton.dart';
 import '../../../../../constants/constants.dart';
@@ -18,7 +19,7 @@ class startContainer extends StatelessWidget {
       decoration: box,
       child: kElevatedButton(
         onPressed: (){
-          Navigator.of(context).pushNamed(chooseSide.id);
+          Zap.toNamed(chooseSide.id);
         },
         child: Text(start, style: googleStyle,),
       ),
