@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/components/iconButton.dart';
+import 'package:zapx/zapx.dart';
 
 import '../../../../../constants/constants.dart';
 
@@ -13,7 +14,8 @@ class goback extends StatelessWidget {
     return myButton(
       icon: goBack,
       onPressed: (){
-        Navigator.of(context).pop();
+        Zap.back();
+        // Navigator.of(context).pop();
       },
     );
   }
