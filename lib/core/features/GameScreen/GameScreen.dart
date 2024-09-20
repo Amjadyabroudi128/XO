@@ -94,11 +94,13 @@ class _GameScreenState extends State<GameScreen> {
   @override
   Widget build(BuildContext context) {
     String ticTAc = "TIC-TAC-TOE";
+    double left10 = 10;
+    double top80 = 80;
     return Scaffold(
       body: Column(
         children: [
           MyPadding(
-            pad: EdgeInsets.only(left: 10, top: 80),
+            pad: EdgeInsets.only(left: left10, top: top80),
             child: appBarText(ticTAc: ticTAc),
           ),
           Expanded(
