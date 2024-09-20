@@ -12,9 +12,9 @@ class mainMenu extends StatelessWidget {
  final String startingPage = "startingPage";
   @override
   Widget build(BuildContext context) {
-
+    double btmPadding = 83;
     return MyPadding(
-      pad: const EdgeInsets.only(bottom: 83),
+      pad:  EdgeInsets.only(bottom: btmPadding),
       child: menuButton(
           onPressed: (){
             Zap.toNamed(startingPage);
