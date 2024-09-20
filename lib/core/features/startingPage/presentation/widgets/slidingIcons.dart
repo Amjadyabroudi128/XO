@@ -15,8 +15,10 @@ class slidingIcons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double topPad = 120;
+    double lefPad = 70;
     return MyPadding(
-      pad: const EdgeInsets.only(top: 120, left: 70),
+      pad:  EdgeInsets.only(top: topPad, left: lefPad),
       child: SlideTransition(
         position: iconsSlideAnimation,
         child: FadeTransition(
