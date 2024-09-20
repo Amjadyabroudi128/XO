@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/components/padding.dart';
 import 'package:tic_tac_toe/components/mainMenu.dart';
 import 'package:tic_tac_toe/constants/constants.dart';
+import 'package:zapx/zapx.dart';
 
 class mainMenu extends StatelessWidget {
   const mainMenu({
@@ -16,7 +17,8 @@ class mainMenu extends StatelessWidget {
       pad: const EdgeInsets.only(bottom: 83),
       child: menuButton(
           onPressed: (){
-            Navigator.of(context).pushNamed(startingPage);
+            Zap.toNamed(startingPage);
+            // Navigator.of(context).pushNamed(startingPage);
           },
           child: Text(menu, style: menuStyle)),
     );
