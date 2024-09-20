@@ -18,7 +18,6 @@ class mainMenu extends StatelessWidget {
       child: menuButton(
           onPressed: (){
             Zap.toNamed(startingPage);
-            // Navigator.of(context).pushNamed(startingPage);
           },
           child: Text(menu, style: menuStyle)),
     );
