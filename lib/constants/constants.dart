@@ -7,7 +7,9 @@ const FaIcon close = FaIcon(FontAwesomeIcons.xmark, color: Colors.yellow, size: 
 const FaIcon circle = FaIcon(FontAwesomeIcons.o, color: Colors.yellow,size: 150, );
 const Icon thumbsUp = Icon(Icons.thumb_up_alt_outlined, size: 130,color: Colors.yellow,);
 const FaIcon frown = FaIcon(FontAwesomeIcons.faceFrownOpen,size: 90,);
-
+String pickaSide = "choose a side";
+double rowSpace = 5;
+double boxHeight = 40;
 // Size
 Size buttonSize = Size(240, 68);
  // colors
@@ -29,6 +31,7 @@ Icon goBack = Icon(Icons.arrow_back, color: myWhite, size: 29,);
  const double size33 = 33;
  const size300 = SizedBox(height: 300,);
  const double icon190 = 190;
+
 // styles
 TextStyle googleStyle = GoogleFonts.aBeeZee(
   fontSize: size33,
