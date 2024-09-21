@@ -8,8 +8,11 @@ const FaIcon circle = FaIcon(FontAwesomeIcons.o, color: Colors.yellow,size: 150,
 const Icon thumbsUp = Icon(Icons.thumb_up_alt_outlined, size: 130,color: Colors.yellow,);
 const FaIcon frown = FaIcon(FontAwesomeIcons.faceFrownOpen,size: 90,);
 String pickaSide = "choose a side";
+// Paddings
 double rowSpace = 5;
 double boxHeight = 40;
+double cWidth = 220;
+double cHeight = 220;
 // Size
 Size buttonSize = Size(240, 68);
  // colors
