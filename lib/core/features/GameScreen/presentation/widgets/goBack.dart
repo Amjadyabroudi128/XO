@@ -15,7 +15,6 @@ class goback extends StatelessWidget {
       icon: goBack,
       onPressed: (){
         Zap.back();
-        // Navigator.of(context).pop();
       },
     );
   }
