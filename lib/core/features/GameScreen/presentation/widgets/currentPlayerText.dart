@@ -13,8 +13,9 @@ class currentPlayerText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String playersTurn = "it's ${currentPlayer} Turn";
+    double btmPadding = 180;
     return MyPadding(
-      pad: EdgeInsets.only(bottom: 180),
+      pad: EdgeInsets.only(bottom: btmPadding),
       child: Text(playersTurn, style: player,),
     );
   }
