@@ -24,7 +24,8 @@ class _GameScreenState extends State<GameScreen> {
   late bool gameEnd;
   late List<String> occupied;
   late String currentPlayer;
-
+   int Xscore = 0;
+   int Oscore = 0;
   @override
   void initState() {
     initializeGame();
@@ -46,6 +47,11 @@ class _GameScreenState extends State<GameScreen> {
         occupied[index] = currentPlayer;
         if (checkWinner(currentPlayer)) {
           gameEnd = true;
+          if (currentPlayer == "X") {
+            Xscore++;
+          } else {
+            Oscore++;
+          }
           showDialog(
             context: context,
             builder: (_) {
