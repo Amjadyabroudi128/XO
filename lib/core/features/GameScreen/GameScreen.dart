@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tic_tac_toe/components/futureDelay.dart';
 import 'package:tic_tac_toe/components/gridView.dart';
 import 'package:tic_tac_toe/components/padding.dart';
+import 'package:tic_tac_toe/core/features/GameScreen/presentation/PlayerOScore.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/DrawWidget.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/MainMenu.dart';
 import 'package:tic_tac_toe/core/features/GameScreen/presentation/widgets/gameOverButton.dart';
@@ -169,29 +170,6 @@ class _GameScreenState extends State<GameScreen> {
               initializeGame();
             },
           );
-  }
-}
-
-class PlayerOScroe extends StatelessWidget {
-  const PlayerOScroe({
-    super.key,
-    required this.Oscore,
-  });
-
-  final int Oscore;
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Column(
-        children: [
-          Text("Player O"),
-          SizedBox(height: 4),
-          Text("Score: $Oscore", style: boldWin),
-        ],
-      ),
-    );
   }
 }
 
