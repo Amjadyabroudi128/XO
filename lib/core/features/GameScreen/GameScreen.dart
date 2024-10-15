@@ -113,16 +113,7 @@ class _GameScreenState extends State<GameScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(top: 2),
-                child: Column(
-                  children: [
-                    Text("Player X"),
-                    SizedBox(height: 4),
-                    Text("Score: $Xscore", style: boldWin),
-                  ],
-                ),
-              ),
+              PlayerXScore(Xscore: Xscore),
               PlayerOScroe(Oscore: Oscore),
             ],
           ),
@@ -170,6 +161,29 @@ class _GameScreenState extends State<GameScreen> {
               initializeGame();
             },
           );
+  }
+}
+
+class PlayerXScore extends StatelessWidget {
+  const PlayerXScore({
+    super.key,
+    required this.Xscore,
+  });
+
+  final int Xscore;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 2),
+      child: Column(
+        children: [
+          Text("Player X"),
+          SizedBox(height: 4),
+          Text("Score: $Xscore", style: boldWin),
+        ],
+      ),
+    );
   }
 }
 
