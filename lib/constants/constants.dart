@@ -62,6 +62,7 @@ TextStyle googleStyle = GoogleFonts.aBeeZee(
  TextStyle alertDialog = TextStyle(color: myWhite, fontSize: 38);
  TextStyle playAgain = GoogleFonts.anton(letterSpacing: 3, color: myWhite, fontSize: 30);
  TextStyle player = TextStyle(fontSize: 35, color: myWhite);
+ TextStyle boldWin = TextStyle(fontSize: 18, fontWeight: FontWeight.bold);
  // Borders
  Border startBorder =  Border(
    bottom: BorderSide(
