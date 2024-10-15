@@ -114,8 +114,14 @@ class _GameScreenState extends State<GameScreen> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  color: Colors.blue,
-                  child: Text("Player X"),
+                  color: Colors.orange,
+                  child:Column(
+                    children: [
+                      Text("Player X"),
+                      SizedBox(height: 3,),
+                      Text("$Xscore",)
+                    ],
+                  ),
                 ),
               ),
               Spacer(),
@@ -123,7 +129,13 @@ class _GameScreenState extends State<GameScreen> {
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
                   color: Colors.yellow,
-                  child: Text("Player Y"),
+                  child: Column(
+                    children: [
+                      Text("Player O"),
+                      SizedBox(height: 3,),
+                      Text("$Oscore",)
+                    ],
+                  ),
                 ),
               )
             ],
