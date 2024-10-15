@@ -101,7 +101,7 @@ class _GameScreenState extends State<GameScreen> {
   Widget build(BuildContext context) {
     String ticTAc = "TIC-TAC-TOE";
     double left10 = 10;
-    double top80 = 80;
+    double top80 = 59;
     return Scaffold(
       body: Column(
         children: [
@@ -113,12 +113,12 @@ class _GameScreenState extends State<GameScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(top: 2),
                 child: Column(
                   children: [
                     Text("Player X"),
                     SizedBox(height: 4),
-                    Text("Score: $Xscore", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                    Text("Score: $Xscore", style: boldWin),
                   ],
                 ),
               ),
@@ -128,7 +128,7 @@ class _GameScreenState extends State<GameScreen> {
                   children: [
                     Text("Player O"),
                     SizedBox(height: 4),
-                    Text("Score: $Oscore", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                    Text("Score: $Oscore", style: boldWin),
                   ],
                 ),
               ),
