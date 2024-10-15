@@ -112,7 +112,6 @@ class _GameScreenState extends State<GameScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              // Display Player X and their score
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(
@@ -123,7 +122,6 @@ class _GameScreenState extends State<GameScreen> {
                   ],
                 ),
               ),
-              // Display Player O and their score
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Column(
