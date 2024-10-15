@@ -103,6 +103,25 @@ class _GameScreenState extends State<GameScreen> {
             pad: EdgeInsets.only(left: left10, top: top80),
             child: appBarText(ticTAc: ticTAc),
           ),
+          Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: Colors.blue,
+                  child: Text("Player X"),
+                ),
+              ),
+              Spacer(),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: Colors.yellow,
+                  child: Text("Player Y"),
+                ),
+              )
+            ],
+          ),
           Expanded(
             child: MyPadding(
               pad: const EdgeInsets.all(14.0),
