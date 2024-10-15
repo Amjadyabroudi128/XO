@@ -110,34 +110,30 @@ class _GameScreenState extends State<GameScreen> {
             child: appBarText(ticTAc: ticTAc),
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
+              // Display Player X and their score
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: Colors.orange,
-                  child:Column(
-                    children: [
-                      Text("Player X"),
-                      SizedBox(height: 3,),
-                      Text("$Xscore",)
-                    ],
-                  ),
+                child: Column(
+                  children: [
+                    Text("Player X"),
+                    SizedBox(height: 4),
+                    Text("Score: $Xscore", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  ],
                 ),
               ),
-              Spacer(),
+              // Display Player O and their score
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: Colors.yellow,
-                  child: Column(
-                    children: [
-                      Text("Player O"),
-                      SizedBox(height: 3,),
-                      Text("$Oscore",)
-                    ],
-                  ),
+                child: Column(
+                  children: [
+                    Text("Player O"),
+                    SizedBox(height: 4),
+                    Text("Score: $Oscore", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  ],
                 ),
-              )
+              ),
             ],
           ),
           Expanded(
